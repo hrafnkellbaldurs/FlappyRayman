@@ -1,0 +1,17 @@
+// bower:scss
+// endbower
+
+body {
+    background: black;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+@import '_game-canvas';
+@import '_player';
+@import '_scoreboard';

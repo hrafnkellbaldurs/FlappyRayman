@@ -1,0 +1,25 @@
+
+@import 'variables';
+
+.GameCanvas {
+    // Design everything with a nice em of 10px.
+    font-size: $base-font-size;
+
+    // Create a 1024x576 pixel canvas.
+    // If everything is defined in em's, you can resize
+    // the whole game just by changing the font-size above
+    // with javascript.
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: em(1024px);
+    height: em(576px);
+    margin-left: (em(-1024px) / 2);
+    margin-top: (em(-576px) / 2);
+
+    // Don't draw outside this box.
+    overflow: hidden;
+
+    // Some graphics
+    background: red;
+}

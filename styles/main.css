@@ -1,0 +1,201 @@
+.Player {
+	position: absolute;
+  	transition: 0.05s;
+	top: 0;
+	left: 0;
+	width: 8em;
+	height: 8em;
+	/*background: blue;*/
+	background-image: url('../images/rayman.png');
+	background-size: 8em 8em;
+}
+
+.Coin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.5em;
+	height: 2.5em;
+	background-image: url('../Images/point.png');
+	background-size: 2.5em 2.5em;
+}
+
+
+.Pipe, .Pipe2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12em;
+	height: 92em;
+	background-image: url('../images/rayman-thickpipe.png');
+	background-size: 12em 92em;
+}
+
+.Player-wings {
+	-webkit-animation: flap 0.1s linear infinite;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 2em;
+	height: 2em;
+	-webkit-transform-origin: bottom right;
+  	background-image: url('../images/wing.png');
+}
+
+@-webkit-keyframes flap {
+  from {
+    -webkit-transform:  rotateX(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg);
+  }
+}
+
+.mute-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8em;
+	height: 3em;
+	cursor: pointer;
+}
+
+.Ground {
+	position: absolute;
+	top: 88.7%;
+	left: 0;
+	width: 55em;
+	height: 8em;
+	background-image: url('../images/ground.png');
+	background-size: 55em 8em;
+}
+.Cloud {
+	position: absolute;
+	top: 30%;
+	right: 10;
+	width: 80em;
+	height: 19.7em;
+    opacity: 0.4;
+	background-image: url('../images/cloud.png');
+	background-size: 30em 19.7em;
+}
+
+
+@font-face {
+  font-family: 'Rayman';
+  src: url('../fonts/Rayman1.ttf');
+}
+
+.Scoreboard {
+	position: absolute;
+	top: 10em;
+	height: 25em;
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	background-image: url('../images/scoreboard.png');
+	background-size: 30em 25em;
+	text-align: center;
+	-webkit-transform: translateZ(0) translate(0, -40em);
+	-webkit-transition: -webkit-transform 0.5s;
+	transform: translateZ(0) translate(0, -40em);
+	transition: transform 0.5s;
+}
+
+/**
+* Reset transform to animate it into the correct spot on the screen.
+*/
+.Scoreboard.is-visible {
+	-webkit-transform: none;
+	transform: none;
+}
+
+.Scoreboard-Score {
+	margin-top: 2em;
+	font-size: 2.7em;
+	color: #29b5a9;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.Scoreboard-Highscore {
+	margin-top: 0.5em;
+	font-size: 2.7em;
+	color: #29b5a9;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.Scoreboard-restart {
+	margin-top: 3em;
+	height: 5em;
+	width: 15em;
+	font-size: inherit;
+	/*padding: 0.4em 1.5em;*/
+	/*border: 0.2em solid white;*/
+	cursor: pointer;
+}
+body {
+background: black;
+}
+.browsehappy {
+margin: 0.2em 0;
+background: ?#?ccc?;
+color: #000;
+padding: 0.2em 0;
+}
+.GameCanvas {
+font-family: 'Rayman';
+font-size: 10px;
+position: absolute;
+/*top: 20em;*/
+width: 40em;
+height: 70em;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+overflow: hidden;
+background-image: url('../images/rayman-background.png');
+/*background: white;*/
+}
+
+.Score {
+	position: absolute;
+	top: 4em;
+	left: 7em;
+	font-size: 2.7em;
+	color: rgb(200,64,160);
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.Overlay {
+	position: absolute;
+	/*top: 20em;*/
+	width: 40em;
+	height: 70em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background-image: url('../images/overlay.png');
+	background-size: 40em 70em;
+	/*background: white;*/
+
+}
+

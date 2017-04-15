@@ -1,0 +1,41 @@
+
+.Scoreboard {
+	position: absolute;
+	left: 50%;
+	top: em(100px);
+	height: em(300px);
+	width: em(400px);
+	margin-left: em(-200px);
+	box-sizing: border-box;
+
+	background: purple;
+	text-align: center;
+
+	// Keep it off-screen
+	transform: translate(0, em(-400px));
+	transition: transform 0.5s;
+}
+
+/**
+ * Reset transform to animate it into the correct spot on the screen.
+ */
+.Scoreboard.is-visible {
+	transform: none;
+}
+
+.Scoreboard-restart {
+	margin-top: em(200px);
+
+	font-size: inherit;
+	padding: em(4px) em(15px);
+	border: em(2px) solid white;
+	background: none;
+	cursor: pointer;
+}
+
+.Scoreboard-restartText {
+	// NOTICE: You'll lose 10% of your score if you don't change this style!
+	font-family: 'Comic Sans MS', serif;
+	font-size: em(24px);
+	color: white;
+}
