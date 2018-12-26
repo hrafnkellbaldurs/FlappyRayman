@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hrafnkellbaldurs/FlappyRayman/issues"
   },
-  "homepage": "https://github.com/hrafnkellbaldurs/FlappyRayman#readme"
+  "homepage": "https://github.com/hrafnkellbaldurs/FlappyRayman#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
