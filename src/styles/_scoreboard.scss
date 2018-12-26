@@ -1,0 +1,57 @@
+@import './variables';
+
+.Scoreboard {
+	position: absolute;
+	top: 10em;
+	height: 25em;
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	background-image: resolve('images/scoreboard.png');
+	background-size: 30em 25em;
+	text-align: center;
+	transform: translateZ(0) translate(0, -40em);
+	transition: transform 0.5s;
+}
+
+/**
+ * Reset transform to animate it into the correct spot on the screen.
+ */
+.Scoreboard.is-visible {
+	transform: none;
+}
+
+.Scoreboard-restart {
+	margin-top: 3em;
+	height: 5em;
+	width: 15em;
+	font-size: inherit;
+	/*padding: 0.4em 1.5em;*/
+	/*border: 0.2em solid white;*/
+	cursor: pointer;
+}
+
+.Scoreboard-Score {
+	margin-top: 2em;
+	font-size: 2.7em;
+	color: #29b5a9;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.Scoreboard-Highscore {
+	margin-top: 0.5em;
+	font-size: 2.7em;
+	color: #29b5a9;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}

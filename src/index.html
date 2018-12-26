@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Flappy Rayman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="GameCanvas">
+            <!-- All audio for the game -->
+            <audio id='Audio'  autoplay loop>
+                <source src="audio/soundtrack.ogg" type="audio/ogg">
+                <source src="audio/soundtrack.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id='Flap'>
+                <source src="audio/raymanUp.ogg" type="audio/ogg">
+                <source src="audio/raymanUp.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id='Death'>
+                <source src="audio/raymanDeath.ogg" type="audio/ogg">
+                <source src="audio/raymanDeath.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id='Coin'>
+                <source src="audio/coin.ogg" type="audio/ogg">
+                <source src="audio/coin.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+        <!-- All audio for the game -->
+
+            <div class="Cloud"></div>
+            <div class="Player"><div class="Player-wings"></div></div>
+            <div class="Coin"></div>
+            <div class="Pipe"></div>
+            <div class="Pipe2"></div>
+            <div class="Score">0</div>
+            <div class="Ground"></div>
+            <div class="Overlay"></div>
+            <div class="Scoreboard">
+                <div class="Scoreboard-Score">Score: <span></span></div>
+                <div class="Scoreboard-Highscore">Highscore: <span></span></div>
+                <img src='images/restart.png' class="Scoreboard-restart"></img>
+            </div>
+             <div class="Mute">
+                <img src='images/mute.png' class='mute-btn'></img>
+            </div>
+        </div>
+</body>
+</html>

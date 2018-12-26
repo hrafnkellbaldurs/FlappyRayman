@@ -1,0 +1,38 @@
+@import './variables';
+
+.Player {
+    $size: 8em; //em(50px)
+    // Absolutely position entities at 0,0 and use transform to
+    // move it around.
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $size;
+    height: $size;
+    transition: 0.05s;
+
+    background-image: resolve('images/rayman.png');
+	background-size: $size $size;
+}
+
+.Player-wings {
+    animation: flap 0.1s linear infinite;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 2em;
+	height: 2em;
+    transform-origin: bottom right;
+    background-image: resolve('images/wing.png');
+    background-size: 2em 2em;
+}
+
+@keyframes flap {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
