@@ -1,0 +1,19 @@
+{
+  "name": "flappyrayman",
+  "version": "1.0.0",
+  "description": "A remake of flappy bird",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrafnkellbaldurs/FlappyRayman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrafnkellbaldurs/FlappyRayman/issues"
+  },
+  "homepage": "https://github.com/hrafnkellbaldurs/FlappyRayman#readme"
+}
