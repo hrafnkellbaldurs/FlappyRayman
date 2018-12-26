@@ -1,0 +1,15 @@
+.Overlay {
+	position: absolute;
+	/*top: 20em;*/
+	width: 40em;
+	height: 70em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background-image: resolve('images/overlay.png');
+	background-size: 40em 70em;
+	/*background: white;*/
+
+}

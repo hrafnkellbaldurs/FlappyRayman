@@ -8,8 +8,7 @@
         <title>Flappy Rayman</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="./src/images/favicon.ico">
-        <link rel="stylesheet" href="src/styles/main.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -19,23 +18,23 @@
         <div class="GameCanvas">
             <!-- All audio for the game -->
             <audio id='Audio'  autoplay loop>
-                <source src="src/audio/soundtrack.ogg" type="audio/ogg">
-                <source src="src/audio/soundtrack.mp4" type="audio/mpeg">
+                <source src="audio/soundtrack.ogg" type="audio/ogg">
+                <source src="audio/soundtrack.mp4" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id='Flap'>
-                <source src="src/audio/raymanUp.ogg" type="audio/ogg">
-                <source src="src/audio/raymanUp.mp3" type="audio/mpeg">
+                <source src="audio/raymanUp.ogg" type="audio/ogg">
+                <source src="audio/raymanUp.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id='Death'>
-                <source src="src/audio/raymanDeath.ogg" type="audio/ogg">
-                <source src="src/audio/raymanDeath.mp3" type="audio/mpeg">
+                <source src="audio/raymanDeath.ogg" type="audio/ogg">
+                <source src="audio/raymanDeath.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id='Coin'>
-                <source src="src/audio/coin.ogg" type="audio/ogg">
-                <source src="src/audio/coin.mp3" type="audio/mpeg">
+                <source src="audio/coin.ogg" type="audio/ogg">
+                <source src="audio/coin.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
 
@@ -52,26 +51,11 @@
             <div class="Scoreboard">
                 <div class="Scoreboard-Score">Score: <span></span></div>
                 <div class="Scoreboard-Highscore">Highscore: <span></span></div>
-                <img src='src/images/restart.png' class="Scoreboard-restart"></img>
+                <img src='images/restart.png' class="Scoreboard-restart"></img>
             </div>
              <div class="Mute">
-                <img src='src/images/mute.png' class='mute-btn'></img>
+                <img src='images/mute.png' class='mute-btn'></img>
             </div>
-
-
         </div>
-
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-
-        <script src="src/scripts/main.js"></script>
-        <script src="src/scripts/controls.js"></script>
-        <script src="src/scripts/game.js"></script>
-        <script src="src/scripts/player.js"></script>
-        <script src="src/scripts/pipe.js"></script>
-        <script src="src/scripts/utils.js"></script>
-        <script src="src/scripts/ground.js"></script>
-        <script src="src/scripts/cloud.js"></script>
-        <script src="src/scripts/wings.js"></script>
-        <script src="src/scripts/coin.js"></script>
 </body>
 </html>

@@ -1,11 +1,12 @@
+import '../styles/main.scss'
+import './polyfills'
+import $ from 'jquery'
+import Game from './game'
 
 /**
  * Bootstrap and start the game.
  */
-$(function() {
-	'use strict';
-
-	var game = new window.Game($('.GameCanvas'));
-	game.start();
-
-});
+$(() => {
+    const game = new Game($('.GameCanvas'))
+    game.start()
+})
