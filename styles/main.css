@@ -14,10 +14,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 2.5em;
-	height: 2.5em;
-	background-image: url('../images/point.png');
-	background-size: 2.5em 2.5em;
+	width: 3.5em;
+	height: 3.5em;
+	background-image: url('../images/ting.gif');
+	background-size: 3.5em 3.5em;
 }
 
 
@@ -32,14 +32,17 @@
 }
 
 .Player-wings {
-	-webkit-animation: flap 0.1s linear infinite;
+    -webkit-animation: flap 0.1s linear infinite;
+    animation: flap 0.1s linear infinite;
 	position: absolute;
 	top: 30%;
 	left: 0;
 	width: 2em;
 	height: 2em;
-	-webkit-transform-origin: bottom right;
-  	background-image: url('../images/wing.png');
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    background-image: url('../images/wing.png');
+    background-size: 2em 2em;
 }
 
 @-webkit-keyframes flap {
@@ -50,6 +53,16 @@
   to {
     -webkit-transform: rotateX(360deg);
   }
+}
+
+@keyframes flap {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
 }
 
 .mute-btn{
@@ -119,7 +132,7 @@
 	font-size: 2.7em;
 	color: #29b5a9;
 	text-shadow:
-		-1px -1px 0 #000,  
+		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
@@ -130,7 +143,7 @@
 	font-size: 2.7em;
 	color: #29b5a9;
 	text-shadow:
-		-1px -1px 0 #000,  
+		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
@@ -167,6 +180,7 @@ left: 0;
 right: 0;
 overflow: hidden;
 background-image: url('../images/rayman-background.png');
+background-size: cover;
 /*background: white;*/
 }
 
@@ -177,7 +191,7 @@ background-image: url('../images/rayman-background.png');
 	font-size: 2.7em;
 	color: rgb(200,64,160);
 	text-shadow:
-		-1px -1px 0 #000,  
+		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
